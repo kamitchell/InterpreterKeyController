@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C40BA93708007B9400E2E5B4 /* EmbeddedInterpreterPlugIn.h in Resources */ = {isa = PBXBuildFile; fileRef = C40BA93508007B9400E2E5B4 /* EmbeddedInterpreterPlugIn.h */; };
+		C40BA93808007B9400E2E5B4 /* EmbeddedInterpreterPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BA93608007B9400E2E5B4 /* EmbeddedInterpreterPlugIn.m */; };
+		C40BA93A08007BCB00E2E5B4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40BA93908007BCB00E2E5B4 /* Cocoa.framework */; };
+		C40BA95C08007CD500E2E5B4 /* EmbeddedInterpreterPlugIn.py in Resources */ = {isa = PBXBuildFile; fileRef = C40BA95B08007CD500E2E5B4 /* EmbeddedInterpreterPlugIn.py */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C40BA92D08007B4500E2E5B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4D29FE407FF53B000EDA198 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C40BA92208007AD500E2E5B4;
+			remoteInfo = EmbeddedInterpreterPlugIn;
+		};
+		C40BA92F08007B4F00E2E5B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4D29FE407FF53B000EDA198 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C40BA92208007AD500E2E5B4;
+			remoteInfo = EmbeddedInterpreterPlugIn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C40BA92308007AD500E2E5B4 /* EmbeddedInterpreterPlugIn.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmbeddedInterpreterPlugIn.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40BA92408007AD500E2E5B4 /* EmbeddedInterpreterPlugIn-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = "EmbeddedInterpreterPlugIn-Info.plist"; sourceTree = "<group>"; };
+		C40BA93508007B9400E2E5B4 /* EmbeddedInterpreterPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbeddedInterpreterPlugIn.h; sourceTree = "<group>"; };
+		C40BA93608007B9400E2E5B4 /* EmbeddedInterpreterPlugIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbeddedInterpreterPlugIn.m; sourceTree = "<group>"; };
+		C40BA93908007BCB00E2E5B4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		C40BA95B08007CD500E2E5B4 /* EmbeddedInterpreterPlugIn.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = EmbeddedInterpreterPlugIn.py; sourceTree = "<group>"; };
+		C4D2A00A07FF563C00EDA198 /* setup.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = setup.py; sourceTree = "<group>"; };
+		C4D2A00E07FF576900EDA198 /* EmbeddedInterpreter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = EmbeddedInterpreter.py; sourceTree = "<group>"; };
+		C4D2A01307FF5B0900EDA198 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		C4D2A03507FF5BF800EDA198 /* EmbeddedInterpreterAppDelegate.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = EmbeddedInterpreterAppDelegate.py; sourceTree = "<group>"; };
+		C4E30E3107FFA7A90043E6B0 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C40BA92108007AD500E2E5B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40BA93A08007BCB00E2E5B4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C40BA92C08007B3000E2E5B4 /* PlugIn */ = {
+			isa = PBXGroup;
+			children = (
+				C40BA95908007C4500E2E5B4 /* Classes */,
+				C40BA94A08007C3D00E2E5B4 /* Frameworks */,
+				C40BA95A08007C5900E2E5B4 /* Other */,
+			);
+			name = PlugIn;
+			sourceTree = "<group>";
+		};
+		C40BA94A08007C3D00E2E5B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C40BA93908007BCB00E2E5B4 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C40BA95908007C4500E2E5B4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C40BA93508007B9400E2E5B4 /* EmbeddedInterpreterPlugIn.h */,
+				C40BA93608007B9400E2E5B4 /* EmbeddedInterpreterPlugIn.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C40BA95A08007C5900E2E5B4 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C40BA92408007AD500E2E5B4 /* EmbeddedInterpreterPlugIn-Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		C4D29FE007FF53B000EDA198 = {
+			isa = PBXGroup;
+			children = (
+				C4D2A00607FF55F400EDA198 /* Classes */,
+				C4D2A00407FF55C400EDA198 /* Resources */,
+				C40BA92C08007B3000E2E5B4 /* PlugIn */,
+				C4D2A00507FF55D000EDA198 /* Main Script */,
+				C4D2A01507FF5B3B00EDA198 /* Other Source */,
+			);
+			sourceTree = "<group>";
+		};
+		C4D2A00407FF55C400EDA198 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4D2A01407FF5B1C00EDA198 /* MainMenu.nib */,
+				C40BA92308007AD500E2E5B4 /* EmbeddedInterpreterPlugIn.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C4D2A00507FF55D000EDA198 /* Main Script */ = {
+			isa = PBXGroup;
+			children = (
+				C4D2A00E07FF576900EDA198 /* EmbeddedInterpreter.py */,
+			);
+			name = "Main Script";
+			sourceTree = "<group>";
+		};
+		C4D2A00607FF55F400EDA198 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C40BA95B08007CD500E2E5B4 /* EmbeddedInterpreterPlugIn.py */,
+				C4D2A03507FF5BF800EDA198 /* EmbeddedInterpreterAppDelegate.py */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C4D2A01507FF5B3B00EDA198 /* Other Source */ = {
+			isa = PBXGroup;
+			children = (
+				C4D2A00A07FF563C00EDA198 /* setup.py */,
+				C4E30E3107FFA7A90043E6B0 /* Info.plist */,
+			);
+			name = "Other Source";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		C430F00A07FFB82B00A1CD60 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "\"$(SOURCE_ROOT)/setup.py\" py2app";
+			buildConfigurationList = 0A900D3D0D4C133300796840 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/env;
+			buildWorkingDirectory = "$(SOURCE_ROOT)";
+			dependencies = (
+				C40BA93008007B4F00E2E5B4 /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+		C49FE1AD07FFBCAA005B49ED /* Development */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "\"$(SOURCE_ROOT)/setup.py\" py2app --alias";
+			buildConfigurationList = 0A900D390D4C133300796840 /* Build configuration list for PBXLegacyTarget "Development" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/env;
+			buildWorkingDirectory = /;
+			dependencies = (
+				C40BA92E08007B4500E2E5B4 /* PBXTargetDependency */,
+			);
+			name = Development;
+			passBuildSettingsInEnvironment = 1;
+			productName = Development;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		C40BA92208007AD500E2E5B4 /* EmbeddedInterpreterPlugIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A900D350D4C133300796840 /* Build configuration list for PBXNativeTarget "EmbeddedInterpreterPlugIn" */;
+			buildPhases = (
+				C40BA91F08007AD500E2E5B4 /* Resources */,
+				C40BA92008007AD500E2E5B4 /* Sources */,
+				C40BA92108007AD500E2E5B4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmbeddedInterpreterPlugIn;
+			productName = EmbeddedInterpreterPlugIn;
+			productReference = C40BA92308007AD500E2E5B4 /* EmbeddedInterpreterPlugIn.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4D29FE407FF53B000EDA198 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0A900D410D4C133300796840 /* Build configuration list for PBXProject "EmbeddedInterpreter" */;
+			hasScannedForEncodings = 0;
+			mainGroup = C4D29FE007FF53B000EDA198;
+			productRefGroup = C4D29FE007FF53B000EDA198;
+			projectDirPath = "";
+			targets = (
+				C49FE1AD07FFBCAA005B49ED /* Development */,
+				C430F00A07FFB82B00A1CD60 /* Deployment */,
+				C40BA92208007AD500E2E5B4 /* EmbeddedInterpreterPlugIn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C40BA91F08007AD500E2E5B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40BA93708007B9400E2E5B4 /* EmbeddedInterpreterPlugIn.h in Resources */,
+				C40BA95C08007CD500E2E5B4 /* EmbeddedInterpreterPlugIn.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C40BA92008007AD500E2E5B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40BA93808007B9400E2E5B4 /* EmbeddedInterpreterPlugIn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C40BA92E08007B4500E2E5B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C40BA92208007AD500E2E5B4 /* EmbeddedInterpreterPlugIn */;
+			targetProxy = C40BA92D08007B4500E2E5B4 /* PBXContainerItemProxy */;
+		};
+		C40BA93008007B4F00E2E5B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C40BA92208007AD500E2E5B4 /* EmbeddedInterpreterPlugIn */;
+			targetProxy = C40BA92F08007B4F00E2E5B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4D2A01407FF5B1C00EDA198 /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4D2A01307FF5B0900EDA198 /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A900D360D4C133300796840 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "EmbeddedInterpreterPlugIn-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = EmbeddedInterpreterPlugIn;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Development;
+		};
+		0A900D370D4C133300796840 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "EmbeddedInterpreterPlugIn-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = EmbeddedInterpreterPlugIn;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Deployment;
+		};
+		0A900D380D4C133300796840 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "EmbeddedInterpreterPlugIn-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = EmbeddedInterpreterPlugIn;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		0A900D3A0D4C133300796840 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				PRODUCT_NAME = Development;
+			};
+			name = Development;
+		};
+		0A900D3B0D4C133300796840 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				PRODUCT_NAME = Development;
+			};
+			name = Deployment;
+		};
+		0A900D3C0D4C133300796840 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Development;
+			};
+			name = Default;
+		};
+		0A900D3E0D4C133300796840 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				PRODUCT_NAME = Deployment;
+			};
+			name = Development;
+		};
+		0A900D3F0D4C133300796840 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				PRODUCT_NAME = Deployment;
+			};
+			name = Deployment;
+		};
+		0A900D400D4C133300796840 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Deployment;
+			};
+			name = Default;
+		};
+		0A900D420D4C133300796840 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		0A900D430D4C133300796840 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		0A900D440D4C133300796840 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A900D350D4C133300796840 /* Build configuration list for PBXNativeTarget "EmbeddedInterpreterPlugIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A900D360D4C133300796840 /* Development */,
+				0A900D370D4C133300796840 /* Deployment */,
+				0A900D380D4C133300796840 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		0A900D390D4C133300796840 /* Build configuration list for PBXLegacyTarget "Development" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A900D3A0D4C133300796840 /* Development */,
+				0A900D3B0D4C133300796840 /* Deployment */,
+				0A900D3C0D4C133300796840 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		0A900D3D0D4C133300796840 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A900D3E0D4C133300796840 /* Development */,
+				0A900D3F0D4C133300796840 /* Deployment */,
+				0A900D400D4C133300796840 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		0A900D410D4C133300796840 /* Build configuration list for PBXProject "EmbeddedInterpreter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A900D420D4C133300796840 /* Development */,
+				0A900D430D4C133300796840 /* Deployment */,
+				0A900D440D4C133300796840 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4D29FE407FF53B000EDA198 /* Project object */;
+}

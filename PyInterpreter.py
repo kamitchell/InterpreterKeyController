@@ -3,12 +3,16 @@ import traceback
 import sets
 import keyword
 import time
+import errno
+import posix
 from code import InteractiveConsole, softspace
 from StringIO import StringIO
 from objc import YES, NO, selector
 from Foundation import *
 from AppKit import *
 from PyObjCTools import NibClassBuilder, AppHelper
+
+from EmbeddedInterpreterPlugIn import InterpreterKeyController
 
 NibClassBuilder.extractClasses("PyInterpreter.nib")
 
@@ -23,6 +27,8 @@ except AttributeError:
 
 class PseudoUTF8Output(object):
     softspace = 0
+    encoding = 'utf8'
+
     def __init__(self, writemethod):
         self._write = writemethod
 
@@ -43,9 +49,14 @@ class PseudoUTF8Output(object):
 
 class PseudoUTF8Input(object):
     softspace = 0
+    encoding = 'utf8'
+
     def __init__(self, readlinemethod):
         self._buffer = u''
         self._readline = readlinemethod
+
+    def write(self, s):
+        raise IOError(errno.EBADF, posix.strerror(errno.EBADF))
 
     def read(self, chars=None):
         if chars is None:
@@ -76,6 +87,9 @@ class PseudoUTF8Input(object):
         self._buffer = u''
 
         return rval
+
+    def flush(self):
+        pass
 
 class AsyncInteractiveConsole(InteractiveConsole):
     lock = False
@@ -125,12 +139,16 @@ class AsyncInteractiveConsole(InteractiveConsole):
 
     def runcode(self, code):
         try:
+            InterpreterKeyController.setEnabled_(True);
             exec code in self.locals
         except SystemExit:
+            InterpreterKeyController.setEnabled_(False);
             raise
         except:
+            InterpreterKeyController.setEnabled_(False);
             self.showtraceback()
         else:
+            InterpreterKeyController.setEnabled_(False);
             if softspace(sys.stdout, 0):
                 print
 
@@ -194,16 +212,6 @@ class PyInterpreter(NibClassBuilder.AutoBaseClass):
     )
 
     #
-    #  NSApplicationDelegate methods
-    #
-
-    def applicationDidFinishLaunching_(self, aNotification):
-        self.textView.setFont_(self.font())
-        self.textView.setContinuousSpellCheckingEnabled_(False)
-        self.textView.setRichText_(False)
-        self._executeWithRedirectedIO(self._interp)
-
-    #
     #  NIB loading protocol
     #
 
@@ -227,6 +235,10 @@ class PyInterpreter(NibClassBuilder.AutoBaseClass):
             write=self.writeCode_,
         ).next
         self._autoscroll = True
+        self.textView.setFont_(self.font())
+        self.textView.setContinuousSpellCheckingEnabled_(False)
+        self.textView.setRichText_(False)
+        self._executeWithRedirectedIO(self._interp)
 
     #
     #  Modal input dialog support

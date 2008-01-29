@@ -157,7 +157,7 @@
 /* Begin PBXLegacyTarget section */
 		C430F00A07FFB82B00A1CD60 /* Deployment */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "\"$(SOURCE_ROOT)/setup.py\" py2app";
+			buildArgumentsString = "/Library/Frameworks/Python.framework/Versions/Current/bin/python \"$(SOURCE_ROOT)/setup.py\" py2app";
 			buildConfigurationList = 0AE5800A0D441407001071E1 /* Build configuration list for PBXLegacyTarget "Deployment" */;
 			buildPhases = (
 			);

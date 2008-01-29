@@ -12,9 +12,12 @@ from PyObjCTools import NibClassBuilder
 
 class EmbeddedInterpreterAppDelegate(NibClassBuilder.AutoBaseClass):
     pythonConsoleController = ivar('pythonConsoleController')
+    keyController = ivar('keyController')
 
     def applicationDidFinishLaunching_(self, sender):
-        pass
+        if EmbeddedInterpreterPlugIn.alloc().init().plugInLoaded():
+            from EmbeddedInterpreterPlugIn import InterpreterKeyController
+            keyController = InterpreterKeyController.new().start()
 
     def showPythonConsole_(self, sender):
         if self.pythonConsoleController is None:

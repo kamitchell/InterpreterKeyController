@@ -10,7 +10,6 @@
 
 -(BOOL)plugInLoaded
 {
-    [[InterpreterKeyController new] start];
     return YES;
 }
 

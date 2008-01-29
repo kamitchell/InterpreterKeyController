@@ -9,10 +9,9 @@
             SUPERCLASS = NSObject; 
         }, 
         {
-            CLASS = PyInterpreterTextViewDelegate; 
+            CLASS = PyInterpreterWindowController; 
             LANGUAGE = ObjC; 
-            OUTLETS = {interpreter = id; scrollView = id; }; 
-            SUPERCLASS = NSObject; 
+            SUPERCLASS = NSWindowController; 
         }
     ); 
     IBVersion = 1; 
